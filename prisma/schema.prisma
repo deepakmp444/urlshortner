@@ -1,0 +1,19 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["referentialIntegrity"]
+}
+
+datasource db {
+  provider             = "mysql"
+  url                  = env("DATABASE_URL")
+  referentialIntegrity = "prisma"
+}
+
+model URL {
+  id          String   @id @default(uuid())
+  setUrl      String   @unique
+  redirectUrl String   @db.LongText
+  createdAt   DateTime @default(now())
+
+  @@index([setUrl])
+}

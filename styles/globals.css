@@ -6,11 +6,6 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -20,7 +15,20 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: rgb(235, 235, 235) !important;
+    background: hsl(0, 7%, 94%) !important;
+  }
+}
+.form-control:focus {
+  border-color: #212221 !important;
+  box-shadow: 0 0 0 0.2rem rgba(26, 28, 26, 0.25) !important;
+}
+.iconPointer {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .widthTruncate {
+    max-width: 150px;
   }
 }
