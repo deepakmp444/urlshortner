@@ -12,7 +12,7 @@ This is URL Shortner, where you can create new url and short url.
 
 ## Demo
 
-https://urlshortner-nine.vercel.app/
+https://urlshortner.deepakkumar.work/
 
 
 ## 🚀 About Me
